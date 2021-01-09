@@ -1,14 +1,32 @@
 <html>
-<
-    head>
+    <head>
     <title>javascipt</title>
 </head>
 <body>
     <h1>My first javascript program</h1>
 </body>
-<button onclick="alert('hii')">Click me</button>
+<p id="text">Hello Pritam</p>
+<button id="myButton">Click me</button>
+<p id="secondparagrapht">Javascript is .......</p>
+<button id="secondbutton">Append</button>
+<p id="emptyparagraph"></p>
+<button id="createparagraph">createparagraph</button>
+<p id="moreText">Some new text</p>
+<button id="styleText">Style text</button>
 <script type="text/javascript">
-    alert(" Page is loaded");
+   	document.getElementById("myButton").onclick = function(){
+    document.getElementById("text").innerHTML="Hello World";
+       }
+    document.getElementById("secondbutton").onclick = function() {
+    document.getElementById("secondparagrapht").innerHTML ="I think"+ document.getElementById("secondparagrapht").innerHTML + "Awsome!";
+    }
+       	document.getElementById("createparagraph").onclick = function () {
+        document.getElementById("emptyparagraph").innerHTML = "<h1>Hii there!</h1>";
+ }
+ 
+    document.getElementById("styleText").onclick = function () {
+        document.getElementById("moreText").style.color ="red";
+    }
 </script>
 
 
